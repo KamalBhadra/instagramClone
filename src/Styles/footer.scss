@@ -1,0 +1,40 @@
+.BottomLinks {
+    position: absolute;
+    height:4rem;
+    width: auto;
+    margin-left: 28rem;
+   
+  
+    ul {
+      margin: 0;
+      display: flex;
+      list-style-type: none;
+      padding-left: 2.5rem;
+      padding-top: 1.5rem;
+     
+      a {
+        text-decoration: none;
+        flex-shrink:0;
+      }
+  
+      li {
+        font-size: 1.2rem;
+        @include header-font-family;
+        flex-shrink:0;
+        margin-right: 1.7rem;
+        line-height: 1.8rem;
+        color: rgb(115, 115, 115);
+        font-weight: 400;
+        line-height: 1.6rem;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+  
+    }
+  
+    .CopyRight {
+      justify-content: center;
+    }
+  }

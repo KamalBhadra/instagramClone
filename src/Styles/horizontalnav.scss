@@ -1,0 +1,103 @@
+.HorizontalNavbar {
+
+  display: flex;
+  height: 5rem;
+  width: 96.5rem;
+  margin-left: 28rem;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+
+  .NavbarContainer {
+
+    display: flex;
+    height: auto;
+    width: 93.5em;
+    border: 0.1rem solid rgb(219, 219, 219);
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    justify-content: center;
+
+    .NavbarItem {
+
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      margin-left: 2rem;
+      margin: 0;
+      padding-right: 5.7rem;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+        color: rgb(115, 115, 115);
+      }
+
+      li {
+
+        padding-top: 2rem;
+        display: flex;
+        margin-left: 0rem;
+        padding-left: 0rem;
+        font-size: 2rem;
+        margin: 0;
+        font-weight: 600;
+        @include header-font-family;
+        font-size: 1.2rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.8rem;
+        vertical-align: baseline;
+        justify-content: center;
+
+        &:hover {
+          border: 0.1rem solid black;
+          border-right-style: none;
+          border-bottom-style: none;
+          border-left-style: none;
+          color: black;
+
+          svg {
+            color: black;
+          }
+        }
+
+        &:active {
+          border: 0.1rem solid black;
+          border-right-style: none;
+          border-bottom-style: none;
+          border-left-style: none;
+          color: black;
+
+          svg {
+            color: black;
+          }
+        }
+
+        &:visited {
+          border: 0.1rem solid black;
+          border-right-style: none;
+          border-bottom-style: none;
+          border-left-style: none;
+          color: black;
+
+          svg {
+            color: black;
+          }
+        }
+
+        svg {
+          padding-right: 0.5rem;
+          vertical-align: baseline;
+          height: 1.8rem;
+        }
+
+      }
+
+
+    }
+
+  }
+}

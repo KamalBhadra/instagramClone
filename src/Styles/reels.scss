@@ -1,0 +1,96 @@
+.ReelGallary {
+    display: flex;
+    margin-left: 29rem;
+    width: 93.5rem;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+  
+    //row for alignment horizontally of three reels.
+  
+    .GallaryRow {
+      display: flex;
+      width: 93.5rem;
+      height: 36rem;
+      margin-bottom: 0.4rem;
+  
+      //container for the reels.
+      .PostContainer {
+        position: relative;
+        width: 23.75rem;
+        margin-right: 0.4rem;
+        height: 36rem;
+  
+      }
+  
+      .PostContainer :hover {
+        opacity: 0.9;
+  
+        .leftBottomIcon {
+          display: none;
+        }
+  
+        .centredIcon {
+          display: flex;
+        }
+  
+      }
+  
+      .centredIcon {
+  
+        @include hover-icons;
+        justify-content: flex-start;
+        padding-left: 1.5rem;
+  
+        span {
+          color: rgb(255, 255, 255);
+          color-scheme: light;
+          cursor: pointer;
+          font-size: 1.6rem;
+          font-weight: 700;
+          line-height: 2rem;
+          @include header-font-family;
+          padding-left: 1rem;
+        }
+  
+        svg {
+  
+          padding-left: 3rem;
+  
+        }
+  
+  
+      }
+  
+      .leftBottomIcon {
+        cursor: pointer;
+        display: flex;
+        position: absolute;
+        justify-content: flex-start;
+        bottom: 8px;
+        left: 0px;
+        font-size: 18px;
+  
+        span {
+          color: rgb(255, 255, 255);
+          color-scheme: light;
+          cursor: pointer;
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+          @include header-font-family;
+          padding-left: 1rem;
+        }
+  
+        svg {
+          padding-left: 2rem;
+  
+        }
+  
+  
+      }
+  
+  
+    }
+  
+  }

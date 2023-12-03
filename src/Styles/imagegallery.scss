@@ -1,0 +1,429 @@
+.gallery-overlay {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .image-gallery {
+  
+      background-color: transparent;
+  
+      .custom-slide {
+  
+        display: flex;
+        max-width: 100%;
+        position: relative;
+        height: 55rem;
+        width: 122rem;
+        justify-content: center;
+  
+        .image {
+          height: 55rem;
+          width: 45rem;
+        }
+  
+        .custom-content {
+  
+          width: 50rem;
+          background-color: #f2f2f2;
+          display: flex;
+          flex-direction: column;
+          border-top-right-radius: 0.4rem;
+          border-bottom-right-radius: 0.4rem;
+          background-color: rgb(255, 255, 255);
+  
+          .top {
+  
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            border-bottom-color: rgb(230, 230, 230);
+            border-bottom-style: solid;
+            border-bottom-width: 0.1rem;
+  
+            .top-header-section {
+  
+              background-color: rgb(255, 255, 255);
+              display: flex;
+              flex-direction: row;
+              height: 6rem;
+              width: 45.2rem;
+              padding: 1.4rem 1.4rem 0rem 1.6rem;
+  
+              .profile-pic-icon {
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                height: 4rem;
+                width: 4rem;
+                @include gradient-border;
+  
+                img {
+                  height: 3.2rem;
+                  width: 3.2rem;
+                  border-radius: 50%;
+                  align-self: center;
+                  background-color: white;
+                  padding: 0.2rem;
+  
+                }
+  
+              }
+  
+              .ProfileName {
+                display: flex;
+                height: 4.2rem;
+                width: 38.6rem;
+                background-color: rgb(255, 255, 255);
+                margin: 0 0 0 1.4rem;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-top: 0.5rem;
+  
+                #uname {
+                  font-size: 1.4rem;
+                  font-weight: 600;
+                  line-height: 1.8rem;
+                  @include header-font-family;
+  
+                }
+  
+                #city {
+                  font-size: 1.2rem;
+                  line-height: 1.6rem;
+                  @include header-font-family()
+                }
+              }
+  
+              //style for option svg at top right in slider
+              .options {
+                display: flex;
+                height: 4rem;
+                width: 4rem;
+                background-color: rgb(255, 255, 255);
+                justify-content: center;
+                align-items: center;
+  
+                svg {
+                  padding-left: 1.5rem;
+                }
+  
+              }
+            }
+          }
+  
+          //content for the middle section on the custom content.
+          .centred-content {
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            height: 20.3rem;
+            width: 40.3rem;
+            padding-left: 1.4rem;
+  
+            .profile-pic-icon {
+              display: flex;
+              justify-content: center;
+              border-radius: 50%;
+              height: 4rem;
+              width: 4rem;
+              @include gradient-border;
+  
+              img {
+                height: 3.2rem;
+                width: 3.2rem;
+                border-radius: 50%;
+                align-self: center;
+                background-color: white;
+                padding: 0.2rem;
+  
+  
+              }
+  
+            }
+  
+            .ProfileName {
+              display: flex;
+              height: 4.2rem;
+              width: 38.6rem;
+              background-color: rgb(255, 255, 255);
+              margin: 0 0 0 1.4rem;
+              flex-direction: column;
+              align-items: flex-start;
+              padding-top: 0.5rem;
+              height: auto;
+  
+              #uname {
+                font-size: 1.4rem;
+                font-weight: 600;
+                line-height: 1.8rem;
+                @include header-font-family;
+  
+              }
+  
+              .tips {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                @include header-font-family;
+                color: rgb(0, 0, 0);
+                font-weight: 400;
+  
+              }
+  
+              .Tagged {
+                color: rgb(0, 55, 107);
+                cursor: pointer;
+                @include header-font-family;
+                font-size: 1.4rem;
+                font-weight: 400;
+                line-height: 1.8rem;
+  
+              }
+  
+              .time {
+  
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: rgb(115, 115, 115);
+                @include header-font-family;
+                font-weight: 400;
+                padding-top: 0.5rem;
+              }
+  
+            }
+  
+          }
+  
+          //comment section aftr middele section and previous section of footer of the content section.
+          .comment-section {
+  
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+            height: 9rem;
+            width: 47rem;
+            padding: 1.4rem 1.4rem 0rem 1.6rem;
+  
+            .profile-pic-icon {
+              display: flex;
+              justify-content: center;
+              border-radius: 50%;
+              height: 4rem;
+              width: 4rem;
+  
+              img {
+                height: 3.2rem;
+                width: 3.2rem;
+                border-radius: 50%;
+                align-self: center;
+                background-color: white;
+  
+              }
+  
+            }
+  
+            .ProfileName {
+              display: flex;
+              height: 4.2rem;
+              width: 38.6rem;
+              background-color: rgb(255, 255, 255);
+              margin: 0 0 0 0.7rem;
+              flex-direction: column;
+              align-items: flex-start;
+              padding-top: 0.5rem;
+  
+              #uname {
+                font-size: 1.4rem;
+                font-weight: 600;
+                line-height: 1.8rem;
+                @include header-font-family;
+              }
+  
+              #like-reply {
+                display: flex;
+                cursor: pointer;
+                @include header-font-family;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                color: #737373;
+                padding-top: 1rem;
+                word-spacing: 0.7rem;
+                font-weight: 600;
+  
+                .time {
+                  font-size: 1.2rem;
+                  line-height: 1.6rem;
+                  color: rgb(115, 115, 115);
+                  @include header-font-family;
+                  font-weight: 400;
+                  padding-right: 1rem;
+                }
+  
+                #linehorizontal {
+  
+                  margin-top: -0.6rem;
+                  padding-right: 2rem;
+  
+                }
+              }
+  
+              .Like {
+                display: flex;
+                height: 4rem;
+                width: 4rem;
+                background-color: rgb(196, 210, 169);
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+  
+              }
+            }
+  
+          }
+  
+          .svg-icons {
+            display: flex;
+            height: 3rem;
+            width: 46.3rem;
+            background-color: rgb(255, 255, 255);
+            padding: 0.6rem 1.8rem 0.8rem 0.5rem;
+            flex-direction: row;
+  
+            #right-svg {
+              display: flex;
+              padding-left: 31.7rem;
+            }
+  
+            svg {
+  
+              display: flex;
+              padding-left: 1.5rem;
+              cursor: pointer;
+  
+            }
+  
+          }
+  
+          .Likes-and-Date {
+  
+            display: flex;
+            height: 4rem;
+            width: 46.1rem;
+            background-color: rgb(255, 255, 255);
+            padding: 0rem 1.8rem 0.8rem 2.1rem;
+            flex-direction: column;
+  
+            align-items: flex-start;
+  
+            .likes {
+              cursor: pointer;
+              font-size: 1.4rem;
+              font-weight: 600;
+              line-height: 1.8rem;
+              @include header-font-family;
+            }
+  
+            .dates {
+              font-size: 1rem;
+              line-height: 1.2rem;
+              color: rgb(115, 115, 115);
+              @include header-font-family;
+              font-weight: 400;
+              padding-right: 1rem;
+              cursor: pointer;
+            }
+  
+          }
+  
+          .comment-textbox {
+  
+            display: flex;
+            height: 4rem;
+            width: 46.1rem;
+            background-color: rgb(255, 255, 255);
+            padding: 3rem 1.8rem 0.8rem 2.1rem;
+            flex-direction: row;
+  
+            input {
+              width: 37.3rem;
+              padding-bottom: 1.5rem;
+              padding-left: 1.5rem;
+              border: none;
+  
+            }
+  
+            .post {
+              padding-top: 0.5rem;
+              font-weight: 400;
+              font-size: 1.4rem;
+              line-height: 1.8rem;
+              color: rgb(223, 221, 221);
+              @include header-font-family;
+            }
+  
+          }
+  
+        }
+  
+  
+      }
+  
+    }
+  
+    //scss styles for the right content of custome-content ends here.
+  
+    .close-button {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      cursor: pointer;
+      color: white;
+      background-color: transparent;
+      border: none;
+      color-scheme: light;
+      line-height: 18px;
+  
+    }
+  
+  }
+  
+  /* Add styles for the previous and next buttons */
+  .image-gallery-left-nav {
+  
+    @include prview-slider-pre-next-button;
+    left: 0px;
+  
+    .image-gallery-svg {
+      @include svg-icon-style-preview-slide;
+    }
+  
+  }
+  
+  .image-gallery-right-nav {
+  
+    @include prview-slider-pre-next-button;
+    right: 0;
+  
+    .image-gallery-svg {
+  
+      @include svg-icon-style-preview-slide;
+    }
+  }
+  
+  //hidend data which is not required in slider style
+  .image-gallery-play-button .image-gallery-svg {
+    height: 2.8rem;
+    width: 2.8rem;
+    visibility: hidden;
+  }
+  
+  .image-gallery-fullscreen-button {
+  
+    visibility: hidden;
+  }

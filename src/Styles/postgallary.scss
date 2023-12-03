@@ -1,0 +1,90 @@
+$mobile: 57.6rem;
+$tablet: 76.8rem;
+$smallDesktop: 99.2rem;
+$desktop: 120rem;
+
+.PostGallary {
+    position: relative;
+    display: flex;
+    margin-left: 28.5rem;
+    width: 97.5rem;
+    height: 93.5rem;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+
+    //raw for the three image aligned section to horizontal.
+    .GallaryRow {
+        display: flex;
+        width: 95.5rem;
+        height: 30.9rem;
+        margin-bottom: 0.4rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        //container for the image.
+        .PostContainer {
+
+            position: relative;
+            width: 30.9rem;
+            padding-left: 0.5rem;
+            padding-top: 0.5rem;
+            height: 30.9rem;
+
+            /* Set each container to one-third of the row width */
+        }
+
+        //icon on top right of the image.
+        .pinIcon {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+
+        }
+
+        //image in the post container.
+        img {
+
+            height: 30.9rem;
+            width: 30.9rem;
+
+            &:hover {
+                opacity: 0.9;
+                display: flex;
+            }
+        }
+
+        .PostContainer :hover {
+            .centredIcon {
+                display: flex;
+            }
+
+        }
+
+        //icons of the heart and comment visible while hovering on to the image.
+        .centredIcon {
+
+            @include hover-icons;
+            justify-content: center;
+
+            span {
+                color: rgb(255, 255, 255);
+                color-scheme: light;
+                cursor: pointer;
+                font-size: 1.6rem;
+                font-weight: 700;
+                line-height: 2rem;
+                @include header-font-family;
+                padding-left: 1rem;
+            }
+
+            svg {
+                padding-left: 3rem;
+
+            }
+
+        }
+
+    }
+
+}
+
